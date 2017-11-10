@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .margin-auto {
+            margin: 0 auto;
+        }
+        .red {
+            background-color: red;
+            width: 300px;
+            height: 20px;
+        }
+        .float-left {
+            float: left;
+        }
+        .fit-content {
+            width: -moz-fit-content;
+            width: -webkit-fit-content;
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div class="margin-auto red">
+    </div>
+    <br>
+    <div class="margin-auto">
+        <div class="red float-left">margin-auto 元素没有加 fit-content </div>
+    </div>
+    <br>
+    <div class="margin-auto fit-content">
+        <div class="red float-left">margin-auto 元素加了fit-content</div>
+    </div>
+    
+</body>
+</html>
