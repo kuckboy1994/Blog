@@ -1,9 +1,9 @@
 ## 水平居中
-1. 若是行内元素，给改元素的父级设置`text-align:center`，即可实现行内元素水平居中。[demo](1-text-align.html)
+1. 若是行内元素，给改元素的父级设置`text-align:center`，即可实现行内元素水平居中。[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/horizontal/1-text-align.html)
 
-2. 若是块级元素, 该元素设置`margin:0 auto`。[demo](2-margin-auto.html)
+2. 若是块级元素, 该元素设置`margin:0 auto`。[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/horizontal/2-margin-auto.html)
 
-3. 若子元素包含`float:left`属性, 为了让子元素水平居中, 则可让父元素宽度设置为`fit-content`,并且配合`margin`, 作如下设置:[demo](3-margin-auto-fit-content.html)
+3. 若子元素包含`float:left`属性, 为了让子元素水平居中, 则可让父元素宽度设置为`fit-content`,并且配合`margin`, 作如下设置:[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/horizontal/3-margin-auto-fit-content.html)
     ```css
     .fit-content {
         width: -moz-fit-content;
@@ -14,7 +14,7 @@
     ```
     目前这个属性只支持Chrome和Firefox浏览器。
 
-4. 使用flex布局，可以很轻松的实现水平居中：[demo](4-flex-justify-content.html)
+4. 使用flex布局，可以很轻松的实现水平居中：[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/horizontal/4-flex-justify-content.html)
     ```css
     .parent {
         display: flex;
@@ -26,7 +26,7 @@
         height: 20px;
     }
     ```
-    .son 将会被水平居中 
+    .son 将会被水平居中 
 
 5. **使用CSS3盒模型，父元素`display:box;box-pack:center;`
     ```css
@@ -61,7 +61,7 @@
     基本介绍：`display:box;`是09年出来的。`display: flex;`是12年出来的。地址：[“Old” Flexbox and “New” Flexbox](https://css-tricks.com/old-flexbox-and-new-flexbox/)。  
     看文章说在手机页面的时候，老机子`display:flex`会有问题的时候就需要box上场啦。
 
-6. 通过使用决定对位，以及负值的`margin-left`来实现：[demo](position-margin-left.html)
+6. 通过使用决定对位，以及负值的`margin-left`来实现：[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/horizontal/position-margin-left.html)
     ```css
     .parent {
         position: relative;
@@ -76,7 +76,7 @@
     }
     ```
 
-7. 使用CSS3中新增的`transform`属性，以及绝对定位:[demo](transform.html)
+7. 使用CSS3中新增的`transform`属性，以及绝对定位:[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/horizontal/transform.html)
     ```css
     .parent {
         position: relative;
@@ -88,7 +88,7 @@
     }
     ```
 
-8. 使用绝对定位，以及`left:0;right:0;margin:0 auto;`：[demo](position-absolute-margin-auto.html)
+8. 使用绝对定位，以及`left:0;right:0;margin:0 auto;`：[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/horizontal/position-absolute-margin-auto.html)
     ```css
     .parent {
         position: relative;
@@ -105,9 +105,9 @@
     ```
 
 ## 垂直居中
-1. 元素是单行文本，设置line-height等于父元素的高度。[demo](1-line-height.html)
+1. 元素是单行文本，设置line-height等于父元素的高度。[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical/1-line-height.html)
 
-2. 元素是行内块级元素, 基本思想是使用display: inline-block, vertical-align: middle和一个伪元素让内容块处于容器中央。[demo](2-display-inline-block.html)
+2. 元素是行内块级元素, 基本思想是使用display: inline-block, vertical-align: middle和一个伪元素让内容块处于容器中央。[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical/2-display-inline-block.html)
     ```css
     .parent {
         height: 100px;
@@ -131,7 +131,7 @@
     通过父元素创建一个看不见的伪类（宽度为0），高度为100%，同时设置为`inline-block`和`vertical-align:middle`使元素垂直居中。  
     这是一种很流行的方法, 也适应IE7。
 
-3. 可用`vertical-align`属性，而`vertical-align`只有在元素为`td`或者`th`时，才会生效，对于其他块级元素，例如`div`、`p`等，默认情况是不支持的。为了使用`vertical-align`，我们需要设置父元素`display:table-cell;vertical-align:middle`。[demo](3-table-vertical-align.html)
+3. 可用`vertical-align`属性，而`vertical-align`只有在元素为`td`或者`th`时，才会生效，对于其他块级元素，例如`div`、`p`等，默认情况是不支持的。为了使用`vertical-align`，我们需要设置父元素`display:table-cell;vertical-align:middle`。[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical/3-table-vertical-align.html)
     ```css
     .parent {
         height: 100px;
@@ -145,7 +145,7 @@
     }
     ```
 
-4. 使用flex布局，`align-items: center;`: [demo](4-flex-align-items-center.html)
+4. 使用flex布局，`align-items: center;`: [demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical/4-flex-align-items-center.html)
     ```css
     .parent {
         height: 100px;
@@ -159,7 +159,7 @@
     }
     ```
 
-5. 使用CSS3盒模型 [demo](5-display-box.html)
+5. 使用CSS3盒模型 [demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical/5-display-box.html)
     ```css
     .parent {
         height: 100px;
@@ -177,7 +177,7 @@
     }
     ```
 
-6. 通过使用决定对位，以及负值的`margin-top`来实现：[demo](6-position-margin-top.html)
+6. 通过使用决定对位，以及负值的`margin-top`来实现：[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical/6-position-margin-top.html)
     ```css
     .parent {
         position: relative;
@@ -193,7 +193,7 @@
     }
     ```
 
-7. 使用CSS3中新增的`transform`属性，以及绝对定位:[demo](7-position-transform.html)
+7. 使用CSS3中新增的`transform`属性，以及绝对定位:[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical/7-position-transform.html)
     ```css
     .parent {
         position: relative;
@@ -209,7 +209,7 @@
     }
     ```
 
-8. 设置父元素相对定位`position:relative`，子元素如下css样式：
+8. 设置父元素相对定位`position:relative`，子元素如下css样式：[demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical/8-position-relative-absolute.html)
     ```css
     .parent {
         position: relative;
@@ -227,7 +227,7 @@
     ```
 
 ## 水平垂直居中
-1. flex: [demo]()
+1. flex: [demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical-horizontal/1-flex.html)
     ```css
     .parent {
         height: 100px;
@@ -237,7 +237,7 @@
     }
     ```
 
-2. 绝对定位 + `margin`: [demo]()
+2. 绝对定位 + `margin`: [demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical-horizontal/2-absolute-margin.html)
     ```css
     .parent {
         position: relative;
@@ -248,13 +248,13 @@
         top: 50%;
         left: 50%;
         margin-left: -0.5 * 宽度;
-        margin-top: -0.5 * 高度;
+        margin-top: -0.5 * 高度;
         width: 100px;
         height: 10px;
         background-color: red;
     }
     ```
-3. 绝对定位 + `transform` : [demo]()
+3. 绝对定位 + `transform` : [demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical-horizontal/3-absolute-transform.html)
     ```css
     .parent {
         position: relative;
@@ -271,7 +271,7 @@
     }
     ```
 
-4. 绝对定位 + `margin: auto` : [demo]()
+4. 绝对定位 + `margin: auto` : [demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical-horizontal/4-absolute-margin-auto.html)
     ```css
     .parent {
         position: relative;
@@ -290,7 +290,7 @@
     }
     ```
 
-5. `table` + `margin:auto` : [demo]()
+5. `table` + `margin:auto` : [demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical-horizontal/5-table-margin-auto.html)
     ```css
     .ancestor {
         display: table;
@@ -311,6 +311,31 @@
     }
     ```
 
+6. `display:inline-block;vertical-align:middle;` : [demo](https://github.com/kuckboy1994/Blog/blob/master/demo/vertical-horizontal-center/vertical-horizontal/6-inline-block-vertical-align.html)
+    ```css
+    .parent {
+        height: 100px;
+        text-align: center;
+
+        border: 1px solid red;
+    }
+    .parent::after {
+        content:'';
+        height:100%;
+        display:inline-block;
+        vertical-align:middle;
+    }
+    .son {
+        display:inline-block;
+        vertical-align:middle;
+        
+        width: 100px;
+        height: 10px;
+        background-color: red;
+    }
+    ```
+
+
 ## 分析
 - flex
     - 基本可以完成任何复杂的布局，
@@ -318,10 +343,11 @@
     - 不同浏览器需要前缀
     - 渲染的性能
 - 绝对定位
-    - \+ `margin` 设置可以完美的兼容ie6，缺点是子元素宽高固定。
-    - \+ `transform` 兼容ie11+，但是自由度上是最佳的。
+    - \+ `margin` 设置可以完美的兼容ie6，缺点是子元素宽高固定。
+    - \+ `transform` 兼容ie11+，但是自由度上是最佳的。
+
 
 
 ## 参考
-- [css-center](https://github.com/Arisons/css-center)
-- [Flexbox Is As Easy As Pie: Designing CSS Layouts](https://www.smashingmagazine.com/2013/05/centering-elements-with-flexbox/)
+- [css-center](https://github.com/Arisons/css-center)
+- [Flexbox Is As Easy As Pie: Designing CSS Layouts](https://www.smashingmagazine.com/2013/05/centering-elements-with-flexbox/)

@@ -8,24 +8,20 @@
     <style>
         .parent {
             height: 100px;
-            margin: 0 auto;
+            text-align: center;
 
             border: 1px solid red;
         }
-        .parent::after{
+        .parent::after {
             content:'';
             height:100%;
             display:inline-block;
             vertical-align:middle;
-
-            width: 10px;
-            background-color: blue;
         }
         .son {
             display:inline-block;
             vertical-align:middle;
             
-
             width: 100px;
             height: 10px;
             background-color: red;
