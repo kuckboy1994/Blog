@@ -1,0 +1,150 @@
+body,dl,dd,h1,h2,h3,h4,h5,h6,p,form,ol,ul {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+ol, ul {
+    list-style: none;
+}
+html {
+    font-size: 62.5%;
+    font-family: PingFang SC, MicroSoft YaHei;
+}
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2.0rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5{
+    font-size: 1.4rem;
+}
+
+h6{
+    font-size: 1.2rem;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+     display: none;
+}
+
+
+.container {
+    height: 100%;
+    background-color: #eee;
+}
+.table {
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+}
+.tbody-thead-right {
+    position: absolute;
+    left: 25vw;
+    right: 0;
+    top: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.table-thead-tr {
+    height: 3.5rem;
+    width: 175vw;
+}
+.table-body {
+    position: absolute;
+    top: 3.5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.table-body-left-fixed {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*bottom: 0;*/
+    width: 25vw;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.table-body-right {
+    position: absolute;
+    left: 25vw;
+    top: 0;
+    right: 0;
+    /*bottom: 0;*/
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    transition: all 1s ease;
+}
+.table-tr {
+    height: 5rem;
+    width: 175vw;
+}
+.table-td {
+    width: 25vw;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dddddd;
+    height: 5rem;
+    float: left;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.4rem;
+    color: #555555;
+}
+.table-td p:nth-of-type(1){
+    line-height: 2rem;
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    color: #333333;
+}
+.table-td p:nth-of-type(2){
+    line-height: 1rem;
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+
+.table-th {
+    width: 25vw;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dddddd;
+    height: 3.5rem;
+    float: left;
+    line-height: 3.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.table-thead-left-fixed .table-th {
+    text-align: left;
+    text-indent: 1.4rem;
+}
+.table-thead-triangle {
+    display: inline-block;
+    float: right;
+    margin-top: 1.4rem;
+    margin-right: 0.5rem;
+    width: 0;
+    height: 0;
+    border-top: 0.3rem solid transparent;
+    border-left: 0.3rem solid #333;
+    border-bottom: 0.3rem solid transparent;
+}
