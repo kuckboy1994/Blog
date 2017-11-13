@@ -1,7 +1,7 @@
 # 用网页实现移动端横向纵向列固定的表格
 最终效果：
 
-![](../gif/table-fixed.gif)
+![](https://raw.githubusercontent.com/kuckboy1994/Blog/master/gif/table-fixed.gif)
 
 当页面横向滑动的时候，纵向上不能滚动。纵向滚动的时候，横向不能滚动。
 
