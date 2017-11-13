@@ -94,7 +94,6 @@ html, body {
     /*bottom: 0;*/
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    transition: all 1s ease;
 }
 .table-tr {
     height: 5rem;
