@@ -1,4 +1,4 @@
-# 使用伪元素来形成类似“居中浮动”的效果（Faking ‘float: center’ with Pseudo Elements）
+# 【翻译】使用伪元素来形成类似“居中浮动”的效果（Faking ‘float: center’ with Pseudo Elements）
 文本翻译自 [css-tricks](https://css-tricks.com/) 网站的 [Faking ‘float: center’ with Pseudo Elements](https://css-tricks.com/float-center/) 一文。翻译有误，期待斧正。
 
 ## 正文
