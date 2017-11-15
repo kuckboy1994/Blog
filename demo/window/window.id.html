@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="exports"></div>
+    <div>
+        <img name="pic" src="#" alt="pic_0" />
+        <img name="pic" src="#" alt="pic_1" />
+        <img name="pic" src="#" alt="pic_2" />
+    </div>
+    <script>
+        for (x in pic) {
+            console.log(pic[x].alt)
+        }
+        alert(window.document.getElementById('exports') == window.exports);
+    </script>
+</body>
+</html>
