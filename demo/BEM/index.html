@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BRM test</title>
+    <style>
+        .page1-header {
+            height: 100px;
+            width: 100%;
+            background-color: red;
+            color: white;
+        }
+        .page1-header__title--blue {
+            color: blue;
+        }
+        .page2-header {
+            height: 100px;
+            width: 100%;
+            background-color: red;
+            color: white;
+        }
+        .page2-header.blue {
+            color: blue;
+        }
+
+        .page2-header .blue {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="page1-header">
+        <div class="page1-header__title--blue">我是BEM</div>
+    </div>
+
+    <div class="page2-header">
+        <div class="page2-header blue">我是BEM——并列选择器</div>
+    </div>
+</body>
+</html>
