@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>检测鼠标双击</title>
+    <style>
+        .test3 span {
+            position: relative;
+        }
+
+        .test3 span a {
+            position: relative;
+            z-index: 2;
+        }
+
+        .test3 span a:hover,
+        .test3 span a:active {
+            z-index: 4;
+        }
+
+        .test3 span input {
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            position: absolute;
+            top: -1px;
+            left: 0;
+            width: 101%; /* Hacky */
+            height: 301%; /* Hacky */
+            z-index: 3;
+        }
+        .test3 span input:focus {
+            background: transparent;
+            border: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test3">
+        <span><input type="text" value=" " readonly="true" /><a href="http://renpingjun.com">Double click me</a></span>
+    </div>
+</body>
+
+</html>
