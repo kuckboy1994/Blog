@@ -5,9 +5,9 @@
 
 ## vi琐事
 vi是在伯克利加州大学，Evans Hall中，使用"Lear-Siegler ADM3A终端”编写完成，在这台机器上的“退出键”（Esc），也就是今天键盘“表格键”（Tab）的位置，目前vi用户仍使用“退出键”（Esc）来转换状态。
-![](https://raw.githubusercontent.com/kuckboy1994/Blog/master/images/vi&vim/asm3aKeyboard.png)
+![](https://raw.githubusercontent.com/kuckboy1994/Blog/master/images/vi%26vim/asm3aKeyboard.png)
 看了这张图，ヾ(｡｀Д´｡) 和HHKB的键盘好像啊，怪不得大神都用HHKB。
-但用HHKB比一定是大神☹。
+但用HHKB不一定是大神☹。
 
 ## 模式编辑器
 vi 是一个模式编辑器
