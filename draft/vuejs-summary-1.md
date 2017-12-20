@@ -3,9 +3,9 @@
 项目快完成，总结一下。从最基础的开始，重现我遇到的问题和一些细节问题。
 
 ## 项目效果图
-![](../images/vuejs-summary-1/overlap-1.png)
-![](../images/vuejs-summary-1/overlap-2.png)
-![](../images/vuejs-summary-1/overlap-3.png)
+![](https://github.com/kuckboy1994/Blog/raw/master/images/vuejs-summary-1/overlap-1.png)
+![](https://github.com/kuckboy1994/Blog/raw/master/images/vuejs-summary-1/overlap-2.png)
+![](https://github.com/kuckboy1994/Blog/raw/master/images/vuejs-summary-1/overlap-3.png)
 
 ### 现实分析：
 1. 上方一个搜索框，输入的时候获取数据。点击加入到右侧的列表中，叠加品种数量+1
@@ -156,7 +156,7 @@ export default {
 .name-leave 离开之前的状态  
 .name-leave-active 离开的状态  
 
-![](../images/vuejs-summary-1/transition-css.png)
+![](https://github.com/kuckboy1994/Blog/raw/master/images/vuejs-summary-1/transition-css.png)
 
 借用一张图片说明，这个是一个渐显到渐逝的过程。绝大部分v-enter-active（进入的状态）和 v-leave（离开之前的状态）其实是一样的，所以v-leave就不用写了，只要控制好其他的三个状态就可以了。这里面需要用到transition属性的地方是active（激活）的时候。为什么是这样呢？你可以审查一下元素发现，内置组件`<transition>`的主要作用就是把这四个状态（类）按照约定好的触发状态添加和删除。至此我们动画就可以动起来了。
 
@@ -187,7 +187,7 @@ export default new Vuex.Store({
 ```
 main.js 引入和把store中的内容作为实例的参数传入。
 ```js
-import store from './store’
+import store from './store'
 new Vue({
     el: '#app',
     store,
@@ -197,11 +197,11 @@ new Vue({
 ```
 组件中使用store可以通过
 ```js
-import Store from '@/store’
+import Store from '@/store'
 ```
 来使用store中的数据，但这样是有点多余的，因为Vuex 通过 store 选项，提供了一种机制将状态从根组件“注入”到每一个子组件中，可以直接在组件中使用$store.state.num 获取到num的值。
 
-Vuex.store中的：  
+Vuex.store中的：
 state 用于数据（状态）的存储。 Vuex 使用单一状态树。我们是不能操作state中的数据的。
 
 mutation 是唯一能操作修改state的方法。我们通过调用我们自定义的mutation方法，修改state。
@@ -234,7 +234,7 @@ mapState 辅助函数
 当一个组件需要获取多个状态时候，将这些状态都声明为计算属性会有些重复和冗余。为了解决这个问题，我们可以使用 mapState 辅助函数帮助我们生成计算属性  
 直接贴代码：
 ```js
-import { mapState } from  ‘vuex'
+import { mapState } from  'vuex'
 // ...
 computed: mapState({
     isShowDelAllBtn: state => state.selectData.length > 0
