@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="inputtext">11</div>
+
+    <script src="./acme.js"></script>
+    <script>
+        
+//         // http://127.0.0.1:8080/response-xss.html?input=%3Cscript%3Ealert(document.cookie);%3C/script%3E
+//         // http://127.0.0.1:8080/response-xss.html?input=%3Cstyle%3Ebody{background:red;}%3C/style%3E
+//         // console.log(Acme)
+        Acme.setCookie('name', 'kuckboy');
+        // var text = Acme.getUrlQuery('input')
+        alert(Acme.getUrlQuery('input'))
+//         console.log(Acme.typeOf(text))
+        // alert(document.getElementById('inputtext').innerHTML)
+        // document.getElementById('inputtext').innerHTML = '222'
+        document.getElementById('inputtext').innerHTML = Acme.getUrlQuery('input')
+    // alert(1)
+    </script>
+    
+</body>
+</html>
